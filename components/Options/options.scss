@@ -1,0 +1,81 @@
+@import "../../assets/css/variables.scss";
+
+.options {
+  justify-content: center;
+  display: flex;
+
+  img {
+    margin: 0px 10px;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+  }
+
+  &__rock {
+    border: solid $rock-color 4px;
+  }
+
+  &__rock {
+    border: solid $rock-color 4px;
+  }
+
+  &__rock:hover {
+    background: $rock-color;
+    animation: hoverOption 0.5s ease-in infinite;
+  }
+
+  &__paper {
+    border: solid $paper-color 4px;
+  }
+
+  &__paper:hover {
+    background: $paper-color;
+    animation: hoverOption 0.5s ease-in infinite;
+  }
+
+  &__scissors {
+    border: solid $scissors-color 4px;
+  }
+
+  &__scissors:hover {
+    background: $scissors-color;
+    animation: hoverOption 0.5s ease-in infinite;
+  }
+
+  @keyframes hoverOption {
+    25% {
+      transform: scale(0.9);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+  }
+
+  & img:first-child {
+    margin-left: 0px;
+  }
+
+  & img:last-child {
+    margin-right: 0px;
+  }
+}
+
+.cpu-reason {
+  justify-content: center;
+  display: flex;
+  margin: 10px 0px;
+  animation: reasonAppear 1s ease-in forwards;
+}
+
+@keyframes reasonAppear {
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../assets/css/variables.scss";
+
+.title {
+  text-align: center;
+  margin-top: 70px;
+
+  hr {
+    width: 25px;
+    color: #8ec2ff;
+    height: 2px;
+    background: #8ec2ff;
+    margin: 35px auto;
+  }
+
+  span {
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  &__rock {
+    color: $rock-color;
+  }
+  &__paper {
+    color: $paper-color;
+  }
+  &__scissors {
+    color: $scissors-color;
+  }
+}

@@ -1,0 +1,45 @@
+.timeline {
+  &__event {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    // animation: eventAppear 1s ease-in 1;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    hr {
+      width: -webkit-fill-available;
+      height: 1px;
+      margin: auto 25px;
+    }
+
+    &__player {
+      img {
+        height: 45px;
+        width: 45px;
+      }
+    }
+
+    @keyframes eventAppear {
+      25% {
+        transform: scale(0.9);
+      }
+      75% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+// .item-enter::after {
+//   opacity: 0;
+// }
+// .item-enter-active::after {
+//   opacity: 1;
+//   transition: opacity 500ms ease-in;
+// }
